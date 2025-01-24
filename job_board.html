@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Board</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        .btn {
+            background-color: #28a745;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .job-listing {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 10px auto;
+            width: 80%;
+            text-align: left;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Find Your Dream Job</h1>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#listings">Job Listings</a></li>
+            <li><a href="#job-detail">Job Details</a></li>
+            <li><a href="#employer">Employer Dashboard</a></li>
+            <li><a href="#candidate">Candidate Dashboard</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="home">
+    <h2>Welcome to the Job Board</h2>
+    <p>4536+ Jobs listed. Find your perfect career opportunity today!</p>
+    <a class="btn" href="#listings">Browse Jobs</a>
+</section>
+
+<section id="listings">
+    <h2>Featured Job Listings</h2>
+    <div class="job-listing">
+        <h3>Software Engineer</h3>
+        <p><strong>Company:</strong> Tech Solutions Inc.</p>
+        <p><strong>Location:</strong> New York, NY</p>
+        <p><strong>Salary:</strong> $90,000 - $120,000</p>
+        <a class="btn" href="#job-detail">View Details</a>
+    </div>
+    <div class="job-listing">
+        <h3>Marketing Manager</h3>
+        <p><strong>Company:</strong> Creative Minds</p>
+        <p><strong>Location:</strong> Los Angeles, CA</p>
+        <p><strong>Salary:</strong> $70,000 - $100,000</p>
+        <a class="btn" href="#job-detail">View Details</a>
+    </div>
+</section>
+
+<section id="job-detail">
+    <h2>Job Details</h2>
+    <p><strong>Position:</strong> Software Engineer</p>
+    <p><strong>Company:</strong> Tech Solutions Inc.</p>
+    <p><strong>Description:</strong> We are looking for a skilled software engineer to join our dynamic team and develop innovative software solutions.</p>
+    <p><strong>Requirements:</strong> Bachelor's degree in Computer Science, 3+ years of experience, proficiency in JavaScript and Python.</p>
+    <a class="btn" href="#candidate">Apply Now</a>
+</section>
+
+<section id="employer">
+    <h2>Employer Dashboard</h2>
+    <form>
+        <label for="job-title">Job Title:</label><br>
+        <input type="text" id="job-title" name="job-title" placeholder="Enter job title"><br><br>
+        <label for="job-description">Job Description:</label><br>
+        <textarea id="job-description" name="job-description" placeholder="Enter job description"></textarea><br><br>
+        <label for="job-location">Location:</label><br>
+        <input type="text" id="job-location" name="job-location" placeholder="Enter location"><br><br>
+        <button type="submit" class="btn">Post Job</button>
+    </form>
+</section>
+
+<section id="candidate">
+    <h2>Candidate Dashboard</h2>
+    <form>
+        <label for="resume">Upload Resume:</label><br>
+        <input type="file" id="resume" name="resume"><br><br>
+        <label for="profile-summary">Profile Summary:</label><br>
+        <textarea id="profile-summary" name="profile-summary" placeholder="Enter your summary"></textarea><br><br>
+        <button type="submit" class="btn">Save Profile</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 Job Board. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
+
+
